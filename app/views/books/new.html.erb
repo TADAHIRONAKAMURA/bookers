@@ -1,2 +1,20 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<body>
+<!-- <h1>Title</h1> -->
+<p>
+  <strong>Title:</strong>
+<%= @book.title %>
+<!-- <h1>Body</h1> -->
+</p>
+<p>
+  <strong>Body:</strong>
+
+<%= @book.body %>
+</p>
+<%= link_to "Show", book_path(@book.id) %> 
+|
+<%= link_to "Back", books_path(@book.id) %> 
+</p>
+</body>
+</html>
+
+
