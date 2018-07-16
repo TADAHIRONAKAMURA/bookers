@@ -12,6 +12,7 @@
 <p>
   <strong>Title:</strong>
 <%= @book.title %>
+
 <!-- <h1>Body</h1> -->
 </p>
 <p>
@@ -19,9 +20,9 @@
 
 <%= @book.body %>
 </p>
-<%= link_to "Edit", edit_book_path(@book.id) %> 
+<%= link_to "Edit", edit_book_path(@book.id),class: "edit_#{@book.id}" %> 
 |
-<%= link_to "Back", books_path(@book.id) %> 
+<%= link_to "Back", books_path(@book.id), class: "back" %>
 </p>
 </body>
 </html>
